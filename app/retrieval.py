@@ -2,7 +2,7 @@ import os
 from pinecone import Pinecone
 from app.embeddings import get_embedding
 
-PINECONE_API_KEY = "pcsk_47rbsY_2Vt5PoTM7bfHPV4ENMLSDkr61qJdFoDErnHk62tZDsQMFav5oXiz2wjuSqs5Qsw"
+PINECONE_API_KEY ="PINECONE_API_KEY"
 PINECONE_ENV = "us-east1-gcp"
 INDEX_NAME = "docker-index"
 
