@@ -3,7 +3,7 @@ from groq import Groq
 
 # Initialize Groq client using environment variable
 # client = Groq(api_key=os.getenv("GROQ_API_KEY"))
-client = Groq(api_key="")
+client = Groq(api_key="REMOVED_SECRET")
 
 
 def generate_answer(context: str, question: str) -> str:
