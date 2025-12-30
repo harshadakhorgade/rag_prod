@@ -1,9 +1,11 @@
 import os
 from groq import Groq
 
+
+GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 # Initialize Groq client using environment variable
 # client = Groq(api_key=os.getenv("GROQ_API_KEY"))
-client = Groq(api_key="GROQ_API_KEY")
+client = Groq(api_key=GROQ_API_KEY)
 
 
 def generate_answer(context: str, question: str) -> str:
