@@ -10,8 +10,9 @@ RUN apt-get update && apt-get install -y \
 
 COPY requirements.txt .
 
-# Upgrade pip and install dependencies safely
+# Upgrade pip and install CPU-only Torch first, then the rest of requirements
 RUN pip install --upgrade pip \
+    && pip install --no-cache-dir torch==2.9.0+cpu -f https://download.pytorch.org/whl/cpu/torch_stable.html \
     && pip install --no-cache-dir -r requirements.txt
 
 COPY . .
